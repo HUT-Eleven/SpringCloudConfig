@@ -1,25 +1,26 @@
-spring:
+ï»¿spring:
   profiles:
     active:
     - dev
     
+    
 ---
-#¿ª·¢»·¾³
+#å¼€å‘ç¯å¢ƒ
 server:
   port: 8001
 
 mybatis: 
-  config-location: classpath:mybatis/mybatis.cfg.xml                # mybatisÖ÷ÅäÖÃÎÄ¼şËùÔÚÂ·¾¶
-  type-aliases-package: org.hut.pojo                                # ËùÓĞEntity±ğÃûÀàËùÔÚ°ü
+  config-location: classpath:mybatis/mybatis.cfg.xml                # mybatisä¸»é…ç½®æ–‡ä»¶æ‰€åœ¨è·¯å¾„
+  type-aliases-package: org.hut.pojo                                # æ‰€æœ‰Entityåˆ«åç±»æ‰€åœ¨åŒ…
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                               # mapperÓ³ÉäÎÄ¼ş
+  - classpath:mybatis/mapper/**/*.xml                               # mapperæ˜ å°„æ–‡ä»¶
   
 spring: 
   profiles: dev
   application:
     name: provider-dept-client-config
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource                    # µ±Ç°Êı¾İÔ´²Ù×÷ÀàĞÍ
+    type: com.alibaba.druid.pool.DruidDataSource                    # å½“å‰æ•°æ®æºæ“ä½œç±»å‹
     url: jdbc:mysql://localhost:3306/clouddb01
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -34,22 +35,22 @@ eureka:
     prefer-ip-address: true
 
 ---
-#²âÊÔ»·¾³
+#æµ‹è¯•ç¯å¢ƒ
 server:
   port: 8001
 
 mybatis: 
-  config-location: classpath:mybatis/mybatis.cfg.xml                # mybatisÖ÷ÅäÖÃÎÄ¼şËùÔÚÂ·¾¶
-  type-aliases-package: org.hut.pojo                                # ËùÓĞEntity±ğÃûÀàËùÔÚ°ü
+  config-location: classpath:mybatis/mybatis.cfg.xml                # mybatisä¸»é…ç½®æ–‡ä»¶æ‰€åœ¨è·¯å¾„
+  type-aliases-package: org.hut.pojo                                # æ‰€æœ‰Entityåˆ«åç±»æ‰€åœ¨åŒ…
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                               # mapperÓ³ÉäÎÄ¼ş
+  - classpath:mybatis/mapper/**/*.xml                               # mapperæ˜ å°„æ–‡ä»¶
   
 spring: 
   profiles: dev
   application:
     name: provider-dept-client-config
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource                    # µ±Ç°Êı¾İÔ´²Ù×÷ÀàĞÍ
+    type: com.alibaba.druid.pool.DruidDataSource                    # å½“å‰æ•°æ®æºæ“ä½œç±»å‹
     url: jdbc:mysql://localhost:3306/clouddb02
     driver-class-name: com.mysql.jdbc.Driver
     username: root
