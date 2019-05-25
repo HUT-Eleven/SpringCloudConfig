@@ -1,14 +1,19 @@
-﻿spring: 
+﻿## -------------------------- ##
+## 编码格式要求 UTF-8         ##
+## -------------------------- ##
+spring: 
   profiles: 
     active: 
       - dev
 ---
+# 开发环境
 spring:
-  profiles: dev     #开发环境
+  profiles: dev
   application: 
     name: config-dev
 ---
+# 测试环境
 spring:
-  profiles: test     #测试环境
+  profiles: test
   application:
     name: config-test
